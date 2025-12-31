@@ -54,7 +54,6 @@ terraform/
 ## Prerequisites
 - Terraform >= 1.12.0
 - AWS CLI configured with valid credentials
-- An existing AWS key pair
 
 ---
 
@@ -88,12 +87,24 @@ terraform workspace select dev
 
 ## Deploy Infrastructure
 Select the workspace and apply the corresponding variable file:
+
+### For **dev** workspace
 ```bash
 terraform workspace select dev
 terraform apply -auto-approve -var-file="dev.tfvars"
 ```
 
-Repeat for `staging` and `prod` using their respective `.tfvars` files.
+### For **staging** workspace
+```bash
+terraform workspace select staging
+terraform apply -auto-approve -var-file="staging.tfvars"
+```
+
+### For **prod** workspace
+```bash
+terraform workspace select prod
+terraform apply -auto-approve -var-file="prod.tfvars"
+```
 
 ---
 
@@ -119,7 +130,17 @@ terraform workspace select dev
 terraform destroy -auto-approve -var-file="dev.tfvars"
 ```
 
-Repeat for `staging` and `prod`.
+### For **staging** workspace
+```bash
+terraform workspace select staging
+terraform destroy -auto-approve -var-file="staging.tfvars"
+```
+
+### For **prod** workspace
+```bash
+terraform workspace select prod
+terraform destroy -auto-approve -var-file="prod.tfvars"
+```
 
 ---
 
