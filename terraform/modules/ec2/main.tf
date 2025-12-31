@@ -25,7 +25,7 @@ resource "aws_instance" "ec2" {
 
   tags = {
     Name        = var.instance_name
-    Environment = terraform.workspace
+    Environment = local.env
   }
 }
 
