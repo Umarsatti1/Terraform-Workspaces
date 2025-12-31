@@ -4,8 +4,8 @@ locals {
   vpc_cidr = "10.0.0.0/16"
   vpc_name = "${terraform.workspace}-umarsatti-vpc" # Workspace-specific name
   igw_name = "${terraform.workspace}-umarsatti-igw" # Workspace-specific name
-  ami_id   = "ami-0ecb62995f68bb549"
-  keypair  = "webapp"
+  ami_id   = "ami-0ecb62995f68bb549"                # Unique AMI ID
+  keypair  = "webapp"                               # Existing key pair
 }
 
 module "vpc" {
