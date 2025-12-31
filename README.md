@@ -1,4 +1,4 @@
-# Terraform Workspaces – Multi-Environment Infrastructure
+# Terraform Workspaces
 
 ## Overview
 This project demonstrates the use of **Terraform Workspaces** to manage multiple environments (**dev, staging, prod**) using a single Terraform codebase. Each workspace maintains an isolated Terraform state while reusing the same infrastructure definitions.
