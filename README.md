@@ -125,6 +125,8 @@ terraform apply -auto-approve -var-file="prod.tfvars"
 
 ## Destroy Infrastructure
 Terraform destroy must be run per workspace:
+
+### For **dev** workspace
 ```bash
 terraform workspace select dev
 terraform destroy -auto-approve -var-file="dev.tfvars"
