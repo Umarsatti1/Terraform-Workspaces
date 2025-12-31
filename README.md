@@ -160,7 +160,7 @@ terraform workspace delete prod
 ---
 
 ## Conclusion
-This project demonstrates how Terraform workspaces enable clean, scalable, and isolated multi-environment infrastructure management using a single codebase. By combining workspaces with modules and environment-specific variables, infrastructure can be safely deployed, validated, and destroyed across multiple environments.
+This project demonstrates how Terraform workspaces enable scalable and isolated multi-environment infrastructure management using a single codebase. By combining workspaces with modules and environment-specific variables, infrastructure can be safely deployed, validated, and destroyed across multiple environments.
 
 ---
 
